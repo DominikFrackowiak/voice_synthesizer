@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ color: white;
+}
+
+
+body{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+ background: linear-gradient(to right top, #a8c0ff, #3f2b96);
+}
+
+#narrator{
+ display: flex;
+ position: relative;
+ flex-direction: column;
+ max-width: calc(100vw - 60px);
+ padding: 25px;
+ border-radius: 10px;
+ background-color: rgba(0, 0, 0, 0.2);
+ overflow: hidden;
+ font: 1rem 'Roboto';
+}
+
+h4{
+ position: absolute;
+ top: 50px;
+ left: 26px;
+ transform: translateY(-50%);
+ /* margin: 30px 0; */
+ font-family: inherit;
+ font-weight: 500;
+ font-style: italic;
+ text-transform: uppercase;
+ font-size: 1.5rem;
+ letter-spacing: 2.5px;
+}
+
+#textarea{
+ margin: 70px 0 25px 0;
+ display: block;
+ height: 10rem;
+ padding: 10px;
+ color: #4E4993;
+ font: inherit;
+ font-size: .8rem ;
+}
+
+.options{
+ display: grid;
+ grid-template-columns: 80px auto;
+ gap: 10px;
+ padding: 20px 0;
+}
+
+#voice, option{
+  font-size: .77rem;
+  color: rgb(19, 18, 18);
+}
+
+.buttons{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 10px;
+ margin-top: 30px;
+}
+
+button{
+ padding: 12px 0;
+ color: #fff;
+ border-radius: 10px;
+ border: none;
+ background-color: rgba(0, 0 , 0, .5);
+ font-family: inherit;
+ cursor: pointer;
+ transition: background-color .5s;
+}
+
+button:hover{
+ background-color: rgba(0, 0, 0, .65);
+}
